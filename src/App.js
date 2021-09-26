@@ -5,6 +5,7 @@ import { Home } from "./pages/Home";
 import { Form } from "./pages/Form";
 
 import "bootstrap/dist/css/bootstrap.min.css";
+import "react-rangeslider/lib/index.css";
 import "./styles/global.css";
 
 function App() {
