@@ -21,6 +21,36 @@ export const candidates = [
       "https://static.poder360.com.br/2018/08/Plano-governo-Bolsonaro.pdf",
     priorityList: [1, 4, 2, 3],
   },
+  {
+    id: 3,
+    name: "Fernando Haddad",
+    img: "https://www.epsjv.fiocruz.br/sites/default/files/images/fernando%20haddad.jpg",
+    party: "PT (Partido dos Trabalhadores)",
+    vice: "Manuela D’Ávila (PCdoB)",
+    governmentPlan:
+      "https://static.poder360.com.br/2018/08/programa_de_governo_6_final-1.pdf",
+    priorityList: [2, 1, 4, 3],
+  },
+  {
+    id: 4,
+    name: "Marina Silva",
+    img: "https://pbs.twimg.com/profile_images/1380251902559019011/rRqCfhnc_400x400.jpg",
+    party: "REDE (Rede Sustentabilidade)",
+    vice: "Eduardo Jorge (PV)",
+    governmentPlan:
+      "https://divulgacandcontas.tse.jus.br/candidaturas/oficial/2018/BR/BR/2022802018/280000622171//proposta_1534349620464.pdf",
+    priorityList: [2, 4, 3, 1],
+  },
+  {
+    id: 5,
+    name: "Guilherme Boulos",
+    img: "https://img.r7.com/images/guilherme-boulos-21042021140644300?dimensions=677x677&resize=677x677&crop=482x482+0+0",
+    party: "PSOL (Partido Socialismo e Liberdade)",
+    vice: "Sônia Guajajara (PSOL)",
+    governmentPlan:
+      "https://divulgacandcontas.tse.jus.br/candidaturas/oficial/2018/BR/BR/2022802018/280000601016//proposta_1533565462424.pdf",
+    priorityList: [2, 1, 3, 4],
+  },
 ];
 
 
