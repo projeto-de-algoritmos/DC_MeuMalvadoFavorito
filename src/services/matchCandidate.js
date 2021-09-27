@@ -1,3 +1,5 @@
+import { ThemeProvider } from "react-bootstrap";
+
 export const candidates = [
   {
     id: 1,
@@ -21,31 +23,75 @@ export const candidates = [
   },
 ];
 
-export function matchCandidate(userPriority) {
-  let inversionsArr = [
-    {
-      id: 1,
-      inversions: 0,
-    },
-    {
-      id: 2,
-      inversions: 0,
-    },
-  ];
 
-  candidates.forEach((item, index) => {
-    for (let i = 0; i < userPriority.length - 1; i++) {
-      for (let j = 1; j < userPriority.length; j++) {
-        if (i < userPriority.indexOf(item.priorityList[i])) {
-          inversionsArr[index].inversions = inversionsArr[index].inversions + 1;
-        }
+  export function setup(userPriority, candidatePriority) {
+    var array = [];
+    var tmp = Array(userPriority.length);
+    console.log(userPriority);
+
+    for (var index = 0; index < userPriority.length; index++) {
+      tmp[userPriority[index] - 1] = index + 1;
+    }
+    userPriority = tmp;
+    
+    for (var index in candidatePriority) {
+      array.push(userPriority[candidatePriority[index] - 1]);
+    }
+    console.log(userPriority);
+    console.log(array);
+    return array;
+  }
+
+  export function mergeAndCount(a, b) {
+    var array = [];
+    var i = a.length;
+    var j = b.length;
+    var r = 0;
+
+    while (i != 0 || j != 0) {
+      if (j != 0 && (i == 0 || b[b.length - j] < a[a.length - i])) {
+        array.push(b[b.length - j]);
+        j -= 1;
+        r += i;
+      } else {
+        array.push(a[a.length - i]);
+        i -= 1;
       }
     }
+    return [r, array];
+  }
+
+  export function sortAndCount(userPriority) {
+    var rb, ra, r;
+    if (userPriority.length == 1) {
+      return [0, userPriority];
+    }
+
+    var a = userPriority.slice(0, Math.floor(userPriority.length/2));
+    var b = userPriority.slice(Math.floor(userPriority.length/2), userPriority.length);
+
+
+    [ra, a] = sortAndCount(a);
+    [rb, b] = sortAndCount(b);
+    [r, userPriority] = mergeAndCount(a, b);
+
+    return [r + ra + rb, userPriority];
+  }
+
+export function matchCandidate(userPriority) {
+  var match;
+  var min = Infinity;
+
+  candidates.forEach((cadidate, index) => {
+    var [inversions, array] = sortAndCount(setup(userPriority, cadidate.priorityList));
+    console.log(inversions);
+
+    if (inversions < min) {
+      min = inversions;
+      match = cadidate;
+    }
+
   });
 
-  inversionsArr.sort((a, b) => a.inversions - b.inversions);
-
-  const candidate = candidates.find((item) => item.id === inversionsArr[0].id);
-
-  return candidate;
+  return match;
 }
