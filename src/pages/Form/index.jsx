@@ -74,7 +74,16 @@ export function Form() {
 
   return (
     <div className="form-page">
-      <h1>Formulário</h1>
+      <h1
+        style={{
+          fontSize: "3.5rem",
+          color: "#f15a33",
+          fontFamily: "LasVegas-Jackpot",
+          textAlign: "center",
+        }}
+      >
+        MEU MALVADO FAVORITO
+      </h1>
       <p
         style={{
           width: "90%",
@@ -82,10 +91,11 @@ export function Form() {
           textAlign: "center",
         }}
       >
-        Escolha o seu nível de prioridade em relação a cada assunto do
-        formulário (sendo 0 quando for totalmente contra, 5 neutro e 10 quando
-        for totalmente a favor) para que possamos encontrar o seu candidato
-        ideal.
+        O propósito da nossa aplicação é coletar algumas das suas opiniões
+        políticas e selecionar o presidenciável mais adequado ao seu perfil.
+        <br />
+        Atribua um valor de 0 a 10 para cada premissa abaixo de acordo com suas
+        prioridades, sendo 0 totalmente contra e 10 totalmente a favor.
       </p>
       <div className="questions-list">
         {questions.map((question) => {
@@ -153,7 +163,7 @@ export function Form() {
       <button
         className="submit-btn"
         style={{
-          backgroundColor: "#7cb342",
+          backgroundColor: "#f15a33",
           width: "85%",
         }}
         onClick={() => handleSubmit()}
@@ -162,7 +172,7 @@ export function Form() {
       </button>
       <Modal show={isModalOpen} onHide={() => setIsModalOpen(false)} size="md">
         <Modal.Header closeButton>
-          <Modal.Title>Seu Candidato</Modal.Title>
+          <Modal.Title>Seu Malvado Favorito</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           {candidate ? (
@@ -191,17 +201,11 @@ export function Form() {
         <Modal.Footer>
           <div className="modal-footer-container">
             <button
-              style={{ backgroundColor: "white" }}
+              style={{ backgroundColor: "#f15a33", color: "white" }}
               onClick={() => setIsModalOpen(false)}
             >
               TENTAR NOVAMENTE
             </button>
-            <button style={{ backgroundColor: "red" }}>
-              VER TODOS CANDIDATOS
-            </button>
-            <a style={{ backgroundColor: "green" }} href="/">
-              VOLTAR A PÁGINA INICIAL
-            </a>
           </div>
         </Modal.Footer>
       </Modal>
