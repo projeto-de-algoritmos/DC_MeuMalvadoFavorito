@@ -7,7 +7,7 @@ export const candidates = [
     vice: "Kátia Abreu (PDT)",
     governmentPlan:
       "https://static.poder360.com.br/2018/08/1533945439_ciro-gomes-proposta-governo.pdf",
-    priorityList: [1, 2, 3, 4],
+    priorityList: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ export const candidates = [
     vice: "Hamilton Mourão (PRTB)",
     governmentPlan:
       "https://static.poder360.com.br/2018/08/Plano-governo-Bolsonaro.pdf",
-    priorityList: [1, 4, 2, 3],
+    priorityList: [5, 1, 4, 9, 3, 7, 2, 8, 6, 10],
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ export const candidates = [
     vice: "Manuela D’Ávila (PCdoB)",
     governmentPlan:
       "https://static.poder360.com.br/2018/08/programa_de_governo_6_final-1.pdf",
-    priorityList: [2, 1, 4, 3],
+    priorityList: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
   },
   {
     id: 4,
@@ -37,7 +37,7 @@ export const candidates = [
     vice: "Eduardo Jorge (PV)",
     governmentPlan:
       "https://divulgacandcontas.tse.jus.br/candidaturas/oficial/2018/BR/BR/2022802018/280000622171//proposta_1534349620464.pdf",
-    priorityList: [2, 4, 3, 1],
+    priorityList: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
   },
   {
     id: 5,
@@ -47,7 +47,7 @@ export const candidates = [
     vice: "Sônia Guajajara (PSOL)",
     governmentPlan:
       "https://divulgacandcontas.tse.jus.br/candidaturas/oficial/2018/BR/BR/2022802018/280000601016//proposta_1533565462424.pdf",
-    priorityList: [2, 1, 3, 4],
+    priorityList: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
   },
 ];
 

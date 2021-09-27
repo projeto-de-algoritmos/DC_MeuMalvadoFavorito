@@ -14,15 +14,39 @@ export function Form() {
     },
     {
       id: 2,
-      label: "Cotas raciais.",
+      label: "Proteção dos animais.",
     },
     {
       id: 3,
-      label: "Criminalização da homofobia.",
+      label: "Reforma dos direitos trabalhistas.",
     },
     {
       id: 4,
-      label: "Reforma dos direitos trabalhistas.",
+      label: "Reforma da previdência",
+    },
+    {
+      id: 5,
+      label: "Voto impresso.",
+    },
+    {
+      id: 6,
+      label: "Preservação do meio ambiente.",
+    },
+    {
+      id: 7,
+      label: "Diminuição da maioridade penal.",
+    },
+    {
+      id: 8,
+      label: "Cotas raciais.",
+    },
+    {
+      id: 9,
+      label: "Privatização de Instituições Públicas.",
+    },
+    {
+      id: 10,
+      label: "Proteção dos povos originários.",
     },
   ]);
   const [answers, setAnswers] = useState([
@@ -33,17 +57,47 @@ export function Form() {
     },
     {
       id: 2,
-      label: "Cotas raciais.",
+      label: "Proteção dos animais.",
       priority: 5,
     },
     {
       id: 3,
-      label: "Criminalização da homofobia.",
+      label: "Reforma dos direitos trabalhistas.",
       priority: 5,
     },
     {
       id: 4,
-      label: "Reforma dos direitos trabalhistas.",
+      label: "Reforma da previdência",
+      priority: 5,
+    },
+    {
+      id: 5,
+      label: "Voto impresso.",
+      priority: 5,
+    },
+    {
+      id: 6,
+      label: "Preservação do meio ambiente.",
+      priority: 5,
+    },
+    {
+      id: 7,
+      label: "Diminuição da maioridade penal.",
+      priority: 5,
+    },
+    {
+      id: 8,
+      label: "Cotas raciais.",
+      priority: 5,
+    },
+    {
+      id: 9,
+      label: "Privatização de Instituições Públicas.",
+      priority: 5,
+    },
+    {
+      id: 10,
+      label: "Proteção dos povos originários.",
       priority: 5,
     },
   ]);
@@ -95,7 +149,7 @@ export function Form() {
         políticas e selecionar o presidenciável mais adequado ao seu perfil.
         <br />
         Atribua um valor de 0 a 10 para cada premissa abaixo de acordo com suas
-        prioridades, sendo 0 totalmente contra e 10 totalmente a favor.
+        prioridades, sendo 0 prioridade nula a e 10 máxima prioridade.
       </p>
       <div className="questions-list">
         {questions.map((question) => {
