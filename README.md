@@ -10,6 +10,8 @@
 | 18/0033646 | João Luis Baraky |
 
 ## Sobre
+O projeto tem como objetivo coletar algumas informações dos usuários sobre assuntos políticos e apresentar o candidato mais adequado de acordo com suas preferências. É selecionado o candidato com o menor número de inversões, utilizando o algoritmo em sua versão Dividir e Conquistar.
+
 
 ## Screenshots
 
@@ -18,8 +20,6 @@
 **Linguagem**: JavaScript<br>
 **Framework**: React<br>
 É necessário possuir o node instalado na máquina.
-
-## Uso
 
 ```powershell
 # Clone o repositório
@@ -30,6 +30,10 @@ cd DC_Dupla3 && npm install
 
 # Inicie o projeto
 npm start
+
+# Visite o endereço localhost:3000 no seu navegador
 ```
 
-Após rodar o projeto visite a porta 3000 no seu navegador, dentro dela você encontrará uma página informativa sobre como prosseguir.
+## Uso
+
+Para utilizar a aplicação basta atribuir para cada pergunta um valor de 0 a 10 de acordo com sua prioridade no contexto político. Em seguida, basta consultar qual é o candidato que mais se aproxima das suas preferências.
