@@ -7,7 +7,7 @@ export const candidates = [
     vice: "Kátia Abreu (PDT)",
     governmentPlan:
       "https://static.poder360.com.br/2018/08/1533945439_ciro-gomes-proposta-governo.pdf",
-    priorityList: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+    priorityList: [4, 6, 8, 3, 2, 10, 9, 1, 5, 7],
   },
   {
     id: 2,
@@ -27,7 +27,7 @@ export const candidates = [
     vice: "Manuela D’Ávila (PCdoB)",
     governmentPlan:
       "https://static.poder360.com.br/2018/08/programa_de_governo_6_final-1.pdf",
-    priorityList: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+    priorityList: [10, 8, 6, 2, 4, 3, 7, 1, 5, 9],
   },
   {
     id: 4,
@@ -37,7 +37,7 @@ export const candidates = [
     vice: "Eduardo Jorge (PV)",
     governmentPlan:
       "https://divulgacandcontas.tse.jus.br/candidaturas/oficial/2018/BR/BR/2022802018/280000622171//proposta_1534349620464.pdf",
-    priorityList: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+    priorityList: [6, 10, 4, 2, 8, 9, 3, 5, 7, 1],
   },
   {
     id: 5,
@@ -47,7 +47,27 @@ export const candidates = [
     vice: "Sônia Guajajara (PSOL)",
     governmentPlan:
       "https://divulgacandcontas.tse.jus.br/candidaturas/oficial/2018/BR/BR/2022802018/280000601016//proposta_1533565462424.pdf",
-    priorityList: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+    priorityList: [10, 8, 6, 4, 2, 5, 7, 1, 3],
+  },
+  {
+    id: 6,
+    name: "Henrique Meirelles",
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Foto_oficial_de_Henrique_Meirelles%2C_secret%C3%A1rio_de_Fazenda%2C_Planejamento_e_Gest%C3%A3o_do_estado_de_S%C3%A3o_Paulo_%28cropped2%29.jpg/1200px-Foto_oficial_de_Henrique_Meirelles%2C_secret%C3%A1rio_de_Fazenda%2C_Planejamento_e_Gest%C3%A3o_do_estado_de_S%C3%A3o_Paulo_%28cropped2%29.jpg",
+    party: "Movimento Democrático Brasileiro (MDB)",
+    vice: "Germano Rigotto (MDB)",
+    governmentPlan:
+      "https://divulgacandcontas.tse.jus.br/candidaturas/oficial/2018/BR/BR/2022802018/280000622281//proposta_1534354939646.pdf",
+      priorityList: [9, 4, 3, 6, 8, 10, 2, 7, 5, 1],
+  },
+  {
+    id: 7,
+    name: "Geraldo Alckmin",
+    img: "https://upload.wikimedia.org/wikipedia/commons/7/7b/Geraldo_Alckmin_em_abril_de_2018_%28II%29.jpg",
+    party: "PSDB (Partido Social da Democracia Brasileira)",
+    vice: "Ana Amélia (PP)",
+    governmentPlan:
+      "https://static.poder360.com.br/2018/08/programa-de-governo-geraldo-alckmin-2018.pdf",
+      priorityList: [9, 4, 6, 3, 8, 10, 2, 5, 7, 1],
   },
 ];
 
