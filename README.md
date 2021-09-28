@@ -1,4 +1,4 @@
-# NomedoProjeto
+# Meu Malvado Favorito
 
 **Conteúdo da Disciplina**: Divide & Conquer<br>
 
@@ -15,6 +15,9 @@ O projeto tem como objetivo coletar algumas informações dos usuários sobre as
 
 ## Screenshots
 
+<img src="./public/img/print1.png">
+<img src="./public/img/print2.png">
+
 ## Instalação
 
 **Linguagem**: JavaScript<br>
@@ -23,7 +26,7 @@ O projeto tem como objetivo coletar algumas informações dos usuários sobre as
 
 ```powershell
 # Clone o repositório
-git clone https://github.com/projeto-de-algoritmos/DC_Dupla3.git
+git clone https://github.com/projeto-de-algoritmos/DC_MeuMalvadoFavorito.git
 
 # Entre no diretório e instale as dependencias
 cd DC_Dupla3 && npm install
